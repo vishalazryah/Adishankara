@@ -1,0 +1,106 @@
+//GALLERY_PAGE_LAYOUT
+
+/*************************GALLERY_PAGE*********************/
+#gallery_page
+  #contnt_area
+    padding: 30px 0 45px
+  .portfolioFilter
+    @media only screen and (max-width: 992px)
+        margin-bottom: 25px
+    @media only screen and (min-width: 992px)
+        position: relative
+    .title
+        font-size: 18px
+        color: rgb(0, 0, 0)
+        font-weight: 500
+        line-height: normal
+        background: rgb(222, 222, 222)
+        height: 40px
+        display: flex
+        align-items: center
+        justify-content: center
+    .box
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
+        overflow: hidden
+    ul
+        padding: 15px 25px 40px
+        border: 1px solid rgb(237, 237, 237)
+        background: rgb(255, 255, 255)
+        li
+            position: relative
+            padding-left: 25px
+            margin-bottom: 20px
+            &::before
+                content: ""
+                position: absolute
+                left: 0px
+                top: 5px
+                width: 0
+                height: 0
+                border-top: 4px solid transparent
+                border-left: 8px solid rgb(196, 196, 196)
+                border-bottom: 4px solid transparent
+                transition: ease-in-out all .3s
+            a
+                font-size: 13px
+                color: rgb(66, 66, 66)
+                line-height: normal
+                transition: ease-in-out all .3s
+            &:hover, &.active
+                &::before
+                    border-left-color: $basecolor
+                a
+                    color: $basecolor
+                    font-weight: 500
+
+  .portfolioContainer
+    [class*="col-"], [class*="col-"]
+      padding: 0 10px
+      margin-bottom: 20px
+    .img_box
+      width: 100%
+      height: 205px
+      background-repeat: no-repeat !important
+      background-position: center !important
+      background-size: cover !important
+      position: relative
+      overflow: hidden
+      @media only screen and (min-width: 1400px)
+        height: 260px
+      @media only screen and (max-width: 1200px)
+        height: 165px
+      .overlay
+        position: absolute
+        bottom: -100%
+        width: 100%
+        height: 100%
+        background: rgba(0, 0, 0, 0.60)
+        text-align: center
+        display: flex
+        align-items: flex-end
+        justify-content: center
+        padding: 30px 25%
+        transition: ease-in-out all .3s
+        opacity: 1
+        @media only screen and (max-width: 1200px)
+          padding: 30px 15px
+        .info
+          font-size: 16px
+          color: rgb(255, 255, 255)
+          font-weight: 500
+          line-height: 22px
+          background: url('../images/icons/hover_icon.png') no-repeat center top
+          padding-top: 60px
+          @media only screen and (max-width: 1200px)
+            font-size: 14px
+            padding-top: 50px
+
+      &:hover
+        .overlay
+          opacity: 1
+          bottom: 0px
+
+footer.hide_gal
+  #galery_sec
+    display: none

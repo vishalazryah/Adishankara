@@ -1,0 +1,107 @@
+//LAYOUT
+
+.fade:not(.show)
+  height: 0px
+/*********HEADING_STYLE*********/
+ 
+.common_title
+  font-size: 34px
+  color: rgb(51, 51, 47)
+  text-transform: uppercase
+  margin-bottom: 40px
+  @media (max-width: 768px) and (min-width:468px)
+    font-size: 25px
+    margin-bottom: 25px
+  @media only screen and (max-width: 468px)
+    font-size: 22px
+    margin-bottom: 25px
+
+    
+//  /************INNER_BANNER*************/
+
+#inner_slider
+  .carousel-item
+    background-repeat: no-repeat !important
+    background-position: center !important
+    -webkit-background-size: cover !important
+    -moz-background-size: cover !important
+    -o-background-size: cover !important
+    background-size: cover !important
+    @media only screen and (min-width:1400px)
+      height: 550px
+    @media (max-width: 1400px) and (min-width:992px)
+      height: 550px
+    @media only screen and (max-width:992px)
+      min-height: 160px
+      height: auto
+    .carousel_control
+      border-radius: 50%
+      background-color: rgba(255, 255, 255, 0.80)
+      width: 40px
+      height: 40px
+      top: 50%
+      &.carousel-control-prev
+        left: 30px
+      &.carousel-control-next
+        right: 30px
+
+#inner_banner
+  background-repeat: no-repeat !important
+  background-position: center !important
+  -webkit-background-size: cover !important
+  -moz-background-size: cover !important
+  -o-background-size: cover !important
+  background-size: cover !important
+  text-align: center
+  // @media only screen and (min-width:1400px)
+  //   height: 550px
+  // @media (max-width: 1400px) and (min-width:992px)
+  //   height: 550px
+  // @media only screen and (max-width:992px)
+  //   min-height: 350px
+  //   height: auto
+
+.inner_page
+  .page_header
+    padding: 55px 0 35px
+    @media only screen and (max-width: 468px)
+      padding: 30px 0 20px
+
+    .page_title
+      font-size: 30px
+      color: rgb(45, 45, 45)
+      font-weight: 600
+      margin-bottom: 25px
+      @media only screen and (max-width: 468px)
+        font-size: 22px
+        margin-bottom: 15px
+
+  .breadcrumb
+    background: transparent
+    padding: 0
+    margin: 0px
+    li
+      padding: 0 7.5px
+      position: relative
+      &::after
+        content: ""
+        position: absolute
+        right: 0px
+        top: 3px
+        width: 1px
+        height: 12px
+        background: rgb(162, 161, 161)
+        transform: rotate(15deg)
+      a
+        font-size: 12px
+        color: rgb(162, 161, 161)
+        line-height: normal
+      &:first-child
+        padding-left: 0px
+      &:last-child
+        &::after
+          display: none
+  .more
+    color: rgb(44, 48, 120)
+    font-weight: 500
+    display: inline-block

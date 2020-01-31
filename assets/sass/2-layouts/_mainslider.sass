@@ -1,0 +1,132 @@
+//MAINSLIDER
+.video-fluid
+    max-width: 100%
+    width: 100%
+
+#main_slider
+    .carousel-inner
+        .carousel-item
+            max-height: 100vh
+            // &::after
+            //     content: ""
+            //     position: absolute
+            //     left: 0px
+            //     bottom: 0px
+            //     width: 100%
+            //     height: 60%
+            //     background: linear-gradient(rgba(44, 48, 120, 0), rgb(25, 28, 68))
+            //     z-index: 1
+    
+    .carousel-caption
+        left: 10%
+        right: 10%
+        bottom: 0px
+        padding: 0px
+        padding-bottom: 20px
+        padding-bottom: 25px
+        @media only screen and (max-width: 1400px)
+            left: 5%
+            right: 5%
+        .slider_bottom
+            display: flex
+            align-items: center
+            justify-content: space-between
+            .lft_box
+                max-width: 40%
+                text-align: left
+                .main_title
+                    font-size: 39px
+                    color: rgb(255, 255, 255)
+                    font-weight: bold
+                    line-height: 1.128
+                    text-align: left
+                    @media (max-width: 768px) and (min-width: 468px)
+                        font-size: 23px
+                    @media only screen and (max-width: 468px)
+                        font-size: 18px
+                .btn
+                    font-size: 16px
+                    color: rgb(255, 255, 255)
+                    text-transform: uppercase
+                    background: url('../images/icons/btn_arrow.png') no-repeat center right 20px rgb(44, 48, 120)
+                    border-radius: 0px
+                    margin-top: 15px
+                    padding-right: 45px
+                    padding: 5px 15px
+                    width: 188px
+                    min-height: 37px
+                    display: flex
+                    align-items: center
+                    @media only screen and (max-width: 768px)
+                        font-size: 12px
+                        width: 155px
+
+            .rit_box
+                ul
+                    display: flex
+                    align-items: center
+                    @media only screen and (max-width: 768px)
+                        -ms-flex-wrap: wrap
+                        flex-wrap: wrap
+                    a
+                        padding: 25px
+                        transition: ease-in-out all .3s
+                        @media only screen and (max-width: 768px)
+                            padding: 15px
+                        .icon
+                            margin-bottom: 10px
+                            transition: ease-in-out all .3s
+                        .title
+                            font-size: 17.213px
+                            color: rgb(255, 255, 255)
+                            transition: ease-in-out all .3s
+                            @media only screen and (max-width: 768px)
+                                font-size: 12px
+                        &:hover
+                            padding-bottom: 40px
+                            .icon, .title
+                                -webkit-animation: fadeInUp 900ms
+                                animation: fadeInUp 900ms
+        .marquee
+            margin-top: 15px
+            display: flex
+            align-items: center
+            justify-content: center
+            .news_title
+                font-size: 16px
+                color: rgb(0, 0, 0)
+                text-transform: uppercase
+                background: rgb(219, 219, 219)
+                border-radius: 0px
+                padding: 5px 15px
+                width: 145px
+                min-width: 145px
+                min-height: 37px
+                display: flex
+                align-items: center
+                @media (max-width: 768px) and (min-width: 468px)
+                    width: 155px
+                    min-width: 155px
+                @media only screen and (max-width: 768px)
+                    font-size: 13px
+                    width: 115px
+                    min-width: 115px
+                    min-height: 30px
+            a
+                font-size: 15px
+                color: rgb(0, 0, 0)
+                position: relative
+                padding-left: 20px
+                background: url('../images/icons/news_list_icon.png') no-repeat center left
+                display: inline-block
+                margin-right: 40px
+                @media only screen and (max-width: 768px)
+                    font-size: 12px
+            marquee
+                display: flex
+                align-items: center
+                justify-content: center
+                background: rgba(255, 255, 255, 0.4)
+                min-height: 37px
+                @media only screen and (max-width: 768px)
+                    min-height: 30px

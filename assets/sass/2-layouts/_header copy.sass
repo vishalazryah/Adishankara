@@ -1,0 +1,244 @@
+//Header
+
+/***********HEADER**************/
+
+@media only screen and (min-width: 1200px)
+    .header .menu-icon
+        display: none
+
+    .navbar-expand-lg .navbar-collapse
+        display: -ms-flexbox !important
+        display: flex !important
+        -ms-flex-preferred-size: auto
+        flex-basis: auto
+
+    .navbar-expand-lg .navbar-nav
+        -ms-flex-direction: row
+        flex-direction: row
+        margin: 0 auto
+
+@media only screen and(max-width:1200px)
+    .collapse:not(.show)
+        display: none !important
+        width: 100%
+    .navbar-expand-lg .navbar-nav
+        -ms-flex-direction: column
+        flex-direction: column
+
+#Header
+    background: rgb(255, 255, 255)
+    position: absolute
+    top: 0px
+    z-index: 2
+    left: 0px
+    width: 100%
+    .main_nav_section
+        background: rgb(235, 235, 235)
+        .navbar
+            padding: 0px
+            width: 100%
+            .dropdown
+                .dropdown-menu
+                    margin-top: 0px
+                    padding: 0px
+                    border-radius: 0px
+                    top: 100%
+                    min-width: 225px
+                    li
+                        margin: 0px
+                        a
+                            background: rgb(234, 234, 234)
+                            font-size: 13px
+                            color: rgb(0, 0, 0)
+                            padding: 13px 20px
+                            display: block
+                            border-bottom: 1px solid rgba(102,102,102,.28)
+                            width: 100%
+                            &:hover
+                                background: rgb(222, 222, 222)
+                        &:last-child
+                            a
+                                border: none
+                @media only screen and (min-width: 992px)
+                    &:hover
+                        .first_drop
+                            display: block
+                .dropdown-submenu
+                    position: relative
+                    &:hover
+                        a
+                            background: rgb(222, 222, 222)
+                    .second_drop
+                        top: 0px
+                        left: 100%
+                        right: auto
+                        border: none
+                        @media only screen and (min-width: 992px)
+                            border-left: 1px solid #c5c5c5
+                        a
+                            background: rgb(234, 234, 234)
+                        
+                        .third_drop
+                            top: 0px
+                            left: 100%
+                            right: auto
+                            border: none
+                            @media only screen and (min-width: 992px)
+                                border-left: 1px solid #c5c5c5
+                        @media only screen and (min-width: 992px)
+                            .dropdown
+                                &:hover
+                                    .third_drop
+                                        display: block
+                    @media only screen and (min-width: 992px)
+                        &:hover
+                            .second_drop
+                                display: block
+                    @media only screen and (max-width: 992px)
+                        &.show
+                            .second_drop
+                                display: block
+                        .second_drop
+                            .dropdown
+                                &.show
+                                    .third_drop
+                                        display: block
+        .navbar-nav
+            margin-left: 0px
+            li
+                margin-right: 15px
+                &:last-child
+                    margin-right: 0px
+                a
+                    font-size: 14px
+                    color: rgb(0, 0, 0)
+                    padding: 15px 0
+
+        .qck_action
+            background: rgb(220, 220, 220)
+            display: flex
+            align-items: center
+            li
+                border-right: 1px solid rgb(235, 235, 235)
+                &:last-child
+                    border-right: 0px
+                a
+                    font-size: 14px
+                    color: rgb(0, 0, 0)
+                    text-transform: uppercase
+                    padding: 15px
+                    display: flex
+                    align-items: center
+                    img
+                        margin-right: 5px
+            @media (max-width: 1200px) and (min-width: 768px)
+                margin-bottom: 15px
+                width: fit-content
+                li
+                    a
+                        padding: 10px 15px
+                        font-size: 12px
+            @media only screen and (max-width: 468px)
+                display: block
+                li
+                    border-right: 0px
+                    border-bottom: 1px solid rgb(235, 235, 235)
+
+        @media only screen and (max-width: 1200px)
+            position: absolute
+            width: 100%
+            top: 100%
+        @media (max-width: 1200px) and (min-width: 768px)
+            .navbar-collapse
+                display: block !important
+                &:not(.show)
+                    display: none !important
+        @media (max-width: 1200px) and (min-width: 768px)
+            .navbar-collapse
+                .navbar-nav
+                    display: flex
+                    flex-direction: row
+        @media only screen and (max-width: 768px)
+            .navbar-collapse
+                padding: 0px 15px 15px
+        
+
+    .header_main
+        padding: 20px 0
+        @media only screen and (max-width: 768px)
+            padding: 10px 15px
+        .row
+            align-items: center
+            justify-content: space-between
+        .logo_sec
+            .logo
+                max-width: 300px
+                @media only screen and (max-width: 768px)
+                    max-width: 210px
+        .qck_contct
+            ul
+                display: flex
+                align-items: center
+                @media only screen and (max-width: 768px)
+                    font-size: 0px
+                li
+                    a
+                        font-size: 16px
+                        color: rgb(0, 0, 0)
+                        text-transform: uppercase
+                        @media only screen and (max-width: 768px)
+                            font-size: 0px
+                i
+                    margin-right: 8px
+                    color: #005faf
+                    transform: rotate(90deg)
+                    @media only screen and (max-width: 768px)
+                        font-size: 14px
+        .affiliations_list
+            display: flex
+            align-items: center
+            li
+                padding: 0 15px
+                display: flex
+                align-items: center
+                span
+                    margin-right: 15px
+            @media only screen and (max-width: 1200px)
+                display: none
+    .menu-icon
+        button
+            position: relative
+            padding: 9px 10px
+            margin-top: 33px
+            margin-left: 10px
+            margin-bottom: 8px
+            background-color: transparent
+            background-image: none
+            border: 1px solid #ddd
+            font-size: 100%
+            margin: 0
+            vertical-align: baseline
+            border-radius: 0px !important
+            outline: none
+            .icon
+                background: #888
+                display: block
+                width: 22px
+                height: 2px
+                border-radius: 1px
+                margin: 3px
+            &[aria-expanded="true"]
+                background: $basecolor
+                .icon
+                    background: #fff
+
+        
+
+    &.fixed
+        position: fixed
+        animation: ease-in-out
+        transition-delay: 1s
+        animation-name: fadeInDown
+        animation-duration: 1s
+        animation-fill-mode: both
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.14)

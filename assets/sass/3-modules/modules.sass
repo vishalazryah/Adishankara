@@ -1,0 +1,52 @@
+//MODULES
+
+aside
+    @media only screen and (max-width: 992px)
+        margin-top: 25px
+    @media only screen and (min-width: 992px)
+        position: relative
+        top: -35px
+    .title
+        font-size: 18px
+        color: rgb(0, 0, 0)
+        font-weight: 500
+        line-height: normal
+        background: rgb(222, 222, 222)
+        height: 40px
+        display: flex
+        align-items: center
+        justify-content: center
+    .box
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
+        overflow: hidden
+    ul
+        padding: 15px 25px 70px
+        border: 1px solid rgb(237, 237, 237)
+        background: rgb(255, 255, 255)
+        li
+            position: relative
+            padding-left: 25px
+            margin-bottom: 20px
+            &::before
+                content: ""
+                position: absolute
+                left: 0px
+                top: 5px
+                width: 0
+                height: 0
+                border-top: 4px solid transparent
+                border-left: 8px solid rgb(196, 196, 196)
+                border-bottom: 4px solid transparent
+                transition: ease-in-out all .3s
+            a
+                font-size: 13px
+                color: rgb(66, 66, 66)
+                line-height: normal
+                transition: ease-in-out all .3s
+            &:hover, &.active
+                &::before
+                    border-left-color: $basecolor
+                a
+                    color: $basecolor
+                    font-weight: 500

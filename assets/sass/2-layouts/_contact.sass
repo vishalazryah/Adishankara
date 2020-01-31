@@ -1,0 +1,80 @@
+//CONTACT_PAGE
+
+/******************CONTACT_PAGE******************/
+#contact_page
+    #contact_info
+        padding: 25px 0 50px
+        .box
+            margin-bottom: 30px
+            .title
+                font-size: 16px
+                font-weight: 500
+                color: rgb(1, 1, 1)
+                line-height: normal
+                margin-bottom: 20px 
+                display: flex
+                align-items: center
+            .icon
+                width: 15px
+                height: 19px
+                display: inline-block
+                min-width: 30px
+                background-repeat: no-repeat !important
+                background-position: center left !important
+                &.address
+                    background: url('../images/icons/address.png')
+                &.phone
+                    background: url('../images/icons/call.png')
+                &.email
+                    background: url('../images/icons/email.png')
+                &.clock
+                    background: url('../images/icons/clock.png')
+            li
+                font-size: 14px
+                color: rgb(51, 51, 51)
+                line-height: 1.857
+    #form_sec
+        background: rgb(247, 247, 247)
+        padding: 55px 0 50px
+        .title_sec
+            margin-bottom: 30px
+            .title
+                font-size: 22px
+                font-weight: 600
+                color: rgb(45, 45, 45)
+                line-height: normal
+                margin-bottom: 10px
+            .form_info
+                font-size: 13px
+                color: rgb(121, 121, 121)
+                line-height: normal
+        
+        .form-group
+            margin-bottom: 15px
+        
+        .form-control
+            border: 1px solid rgb(230, 230, 230)
+            background-color: rgb(255, 255, 255)
+            height: 60px
+            width: 100%
+            padding: 22px 30px
+            outline: none
+            box-shadow: none
+        textarea
+            min-height: 210px
+        .submit
+            border: 1px solid rgb(230, 230, 230)
+            background-color: rgb(44, 48, 120)
+            width: 200px
+            height: 60px
+            font-size: 14px
+            color: rgb(255, 255, 255)
+            text-transform: uppercase
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+    #contact_map
+        iframe
+            @media only screen and (max-width: 992px)
+                height: 290px

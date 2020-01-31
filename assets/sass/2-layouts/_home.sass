@@ -1,0 +1,692 @@
+//HOME_PAGE_LAYOUT
+
+ /******************************HOME_PAGE***************************///I
+#about_sec
+    padding: 75px 0 50px
+    background: rgb(235, 235, 235)
+    position: relative
+    &::after
+        content: ""
+        position: absolute
+        left: 0px
+        bottom: 0px
+        width: 100%
+        height: 60%
+        background: linear-gradient(rgba(255, 255, 255, 0), rgb(247, 247, 247))
+        z-index: 0
+    .container
+        position: relative
+        z-index: 1
+    .welcome_title
+        margin-bottom: 35px
+        .title
+            background-color: rgb(236, 148, 75)
+            width: 114px
+            height: 32px
+            font-size: 17px
+            color: rgb(255, 255, 255)
+            text-transform: uppercase
+            margin-bottom: 30px
+            display: flex
+            align-items: center
+            padding-left: 12px
+            position: relative
+            @media only screen and (max-width: 768px)
+                width: 98px
+                font-size: 14px
+
+            &::after
+                content: ""
+                width: 0
+                height: 0
+                border-bottom: 32px solid rgb(236, 148, 75)
+                border-right: 32px solid transparent
+                position: absolute
+                right: -32px
+        .head
+            font-size: 38px
+            color: rgb(44, 48, 120)
+            font-weight: bold
+            line-height: 0.917
+            @media (max-width: 1200px) and (min-width: 992px)
+                font-size: 38px
+            @media (max-width: 992px) and (min-width: 768px)
+                font-size: 32px
+            @media only screen and (max-width: 768px)
+                font-size: 28px
+                line-height: 26px
+    .about_info
+        font-size: 17px
+        color: rgb(49, 49, 49)
+        line-height: 1.549
+        @media only screen and (max-width: 1200px)
+            font-size: 15px
+        p
+            font-size: 17px
+            color: rgb(49, 49, 49)
+            line-height: 1.549
+            @media only screen and (max-width: 1200px)
+                font-size: 15px
+            @media only screen and (max-width: 768px)
+                font-size: 14px
+        
+    
+    .slick-track
+        @media only screen and (min-width: 1200px)
+            margin: 0 -75px
+        @media (max-width: 1200px) and (min-width: 992px)
+            margin: 0 -45px
+        @media only screen and (max-width: 992px)
+            margin: 0 -25px
+    .box
+        margin-top: 25px
+        @media only screen and (min-width: 1200px)
+            padding: 0 80px
+        @media (max-width: 1200px) and (min-width: 992px)
+            padding: 0 45px
+        @media only screen and (max-width: 992px)
+            padding: 0 25px
+        @media only screen and (min-width: 468px)
+            border-right: 1px solid rgb(225, 225, 225)
+        .icon_box
+            padding-bottom: 10px
+            min-height: 45px
+            position: relative
+            margin-bottom: 10px
+            &::after
+                content: ""
+                background: url('../images/icons/title_after.png') no-repeat
+                width: 45px
+                height: 3px
+                display: inline-block
+                position: absolute
+                left: 0px
+                bottom: 0px
+        .title
+            font-size: 19px
+            color: rgb(44, 48, 120)
+            text-transform: uppercase
+            line-height: 1.263
+            font-weight: 600
+            margin-bottom: 15px
+        .info
+            font-size: 15px
+            color: rgb(64, 64, 64)
+            line-height: 1.289
+            p
+                font-size: 15px
+                color: rgb(64, 64, 64)
+                line-height: 1.289
+                margin-bottom: 0px
+        .learn_more
+            margin-top: 20px
+            font-size: 14px
+            color: rgb(44, 48, 120)
+            text-transform: uppercase
+            font-weight: 600
+            i
+                margin-right: 5px
+
+#upcoming_events
+    padding: 60px 0 35px
+    .common_title
+        text-align: center
+    .box
+        @media only screen and (min-width: 468px)
+            padding: 0 35px
+            border-right: 1px solid rgb(225, 225, 225)
+        .img_box
+            position: relative
+            margin-bottom: 5px
+            .event_title
+                font-size: 20px
+                color: rgb(248, 248, 248)
+                background: rgba(0, 0, 0, 0.702)
+                padding: 10px
+                position: absolute
+                left: 0px
+                bottom: 0px
+                width: 100%
+        .info_box
+            display: flex
+            align-items: center
+            .date_box
+                background-color: rgb(236, 148, 75)
+                text-align: center
+                text-transform: uppercase
+                color: $white
+                font-weight: 500
+                padding: 4px 11px
+                .mnth
+                    font-size: 16px
+                .date
+                    font-size: 31px
+            .info
+                font-size: 13px
+                color: rgb(51, 51, 47)
+                line-height: 1.308
+                text-align: justifyLeft
+                padding-left: 10px
+                font-weight: 500
+                p
+                    font-size: 13px
+                    color: rgb(51, 51, 47)
+                    line-height: 1.308
+                    text-align: justify
+                    margin-bottom: 0px
+                    font-weight: 500
+    .slick-dots
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-top: 15px
+        li
+            margin: 0 4px
+            button
+                border-radius: 4px
+                background: rgb(199, 201, 231)
+                width: 19px
+                height: 8px
+                font-size: 0px
+                border: none
+            &.slick-active
+                button
+                    background: $basecolor
+
+#news_sec
+    padding: 35px 0 30px
+    .common_title
+        text-align: center
+    [class*="col-"], [class^="col-"]
+        padding: 10px
+    .news_box
+        .img_box
+            position: relative
+            overflow: hidden
+            img
+                transition: ease-in-out all 1s
+        .info_box
+            position: absolute
+            right: 0px
+            bottom: 0px
+            background: rgba(0, 0, 0, 0.702)
+            padding: 10px 25px
+            width: 100%
+            @media only screen and (min-width: 1650px)
+                width: calc(100% - 100px)
+                &::before
+                    content: ""
+                    width: 0
+                    height: 0
+                    border-bottom: 66px solid rgba(0, 0, 0, 0.702)
+                    border-left: 100px solid transparent
+                    position: absolute
+                    left: -100px
+                    bottom: 0
+            @media only screen and (max-width: 768px)
+                padding: 10px
+            .top_sec
+                display: flex
+                align-items: center
+                justify-content: space-between
+                .news_title
+                    font-size: 16px
+                    color: rgb(236, 148, 75)
+                    text-transform: uppercase
+                .news_date
+                    font-size: 11px
+                    color: rgb(255, 255, 255)
+                    text-transform: uppercase
+            .info
+                font-size: 10px
+                color: rgb(255, 255, 255)
+                text-transform: uppercase
+                line-height: 1.923
+                p
+                    font-size: 10px
+                    color: rgb(255, 255, 255)
+                    text-transform: uppercase
+                    line-height: 1.923
+                    margin-bottom: 0px
+        &:hover
+            .img_box
+                img
+                    transform: scale(1.5)
+
+    .lft_box
+        @media only screen and (min-width: 768px)
+            .news_box
+                .info_box
+                    .top_sec
+                        .news_title
+                            font-size: 22px
+                        .news_date
+                            font-size: 16px
+                    .info
+                        font-size: 13px
+                        p
+                            font-size: 13px
+
+    .rit_box
+        .row
+            margin: -10px
+        .news_box 
+            @media only screen and (min-width: 1650px)
+                .info_box
+                    width: calc(100% - 75px)
+                    padding: 10px 10px
+                    &::before
+                        border-bottom: 55px solid rgba(0, 0, 0, 0.702)
+                        border-left: 75px solid transparent
+                        left: -75px
+
+#academics_sec
+    padding: 50px 0 60px
+    .common_title
+        text-align: center
+    .nav-tabs
+        justify-content: center
+        align-items: center
+        border: none
+        margin-bottom: 45px
+        @media only screen and (max-width: 768px)
+            display: block
+            text-align: center
+        li
+            margin: 0 15px
+            a
+                font-size: 17px
+                font-weight: 500
+                color: rgb(51, 51, 47)
+                padding: 10px 25px
+                background: rgb(255, 255, 255) 
+                position: relative
+                &::before
+                    content: ""
+                    background: rgb(44, 48, 120)
+                    position: absolute
+                    left: 0px
+                    top: 50%
+                    width: 0px
+                    height: 1px
+                    z-index: 1
+                    transition: ease-in-out all .5s
+                &::after
+                    content: ""
+                    background: rgb(44, 48, 120)
+                    position: absolute
+                    right: 0px
+                    top: 50%
+                    width: 0px
+                    height: 1px
+                    z-index: 1
+                    transition: ease-in-out all .5s
+                &.active
+                    background: $basecolor
+                    color: rgb(255, 255, 255)
+                    &::before
+                        width: 20px
+                        left: -20px
+                    &::after
+                        width: 20px
+                        right: -20px
+    .tab-content
+        ul
+            align-items: center
+            justify-content: center
+            li
+                display: flex
+                align-items: center
+                justify-content: center
+                width: calc(100%/ 5)
+                padding: 10px
+                @media only screen and (min-width: 1200px)
+                    width: calc(100%/ 5)
+                @media (max-width: 1200px) and (min-width: 922px)
+                    width: calc(100%/ 4)
+               
+                @media (max-width: 992px) and (min-width: 670px)
+                    width: calc(100%/ 3)
+
+                @media (max-width: 670px) and (min-width: 468px)
+                    width: calc(100%/ 2)
+
+                @media only screen and (max-width: 468px)
+                    width: 100%
+
+        .box
+            border-radius: 50%
+            background: rgb(255, 255, 255)
+            width: 220px
+            height: 220px
+            padding: 15px
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            border: 1px solid rgb(215, 215, 215)
+            transition: ease-in-out all .3s
+            overflow: hidden
+            .icon_box
+                margin-bottom: 15px
+            .course
+                font-size: 14px
+                color: rgb(51, 51, 47)
+                line-height: 17px
+                text-transform: uppercase
+            &.main
+                background: rgb(245, 245, 245)
+                border: 1px solid rgb(245, 245, 245)
+                .course_name
+                    font-size: 32px
+                    color: rgb(72, 72, 72)
+                    text-transform: uppercase
+                    line-height: 1.135
+            &:hover
+                background: rgb(249, 249, 249)
+                .icon_box
+                    -webkit-animation: flipInY 600ms
+                    animation: flipInY 600ms
+                .course
+                    -webkit-animation: fadeInUp 600ms
+                    animation: fadeInUp 600ms
+
+
+#infrastructure
+    background: url('../images/world-map-dotted.png') no-repeat center rgb(244, 244, 244)
+    padding: 70px 0 80px
+    .sec_title
+        font-size: 34px
+        color: rgb(0, 0, 0)
+        line-height: 44px
+        margin-bottom: 25px
+        @media only screen and (max-width: 576px)
+            font-size: 28px
+        strong
+            display: block
+            text-transform: uppercase
+    .info
+        font-size: 15px
+        color: rgb(51, 51, 47)
+        line-height: 1.755
+        p
+            font-size: 15px
+            color: rgb(51, 51, 47)
+            line-height: 1.755
+    .lists
+        margin: 25px 0 40px
+        .box
+            text-align: center
+            padding: 15px 0
+            .icon_box
+                margin-bottom: 15px
+            .title
+                font-size: 15px
+                color: rgb(51, 51, 47)
+
+    .know_more
+        font-size: 16px
+        color: white
+        text-transform: uppercase
+        background: url(../images/icons/btn_arrow.png) no-repeat center right 20px $basecolor2
+        border-radius: 0px
+        margin-top: 15px
+        padding-right: 40px
+        padding: 5px 25px
+        width: 166px
+        min-height: 37px
+        display: flex
+        align-items: center
+
+
+    .vid_sec
+        height: calc(100% - 69px)
+        background-repeat: no-repeat !important
+        background-position: center !important
+        background-size: cover !important
+        position: relative
+        @media only screen and (max-width: 992px)
+            min-height: 480px
+            height: auto
+        @media only screen and (max-width: 768px)
+            min-height: 355px
+            height: auto
+        .video-play-button
+            position: absolute
+            z-index: 1
+            top: 50%
+            left: 50%
+            transform: translateX(-50%) translateY(-50%)
+            box-sizing: content-box
+            display: block
+            width: 100%
+            height: 100%
+            border-radius: 50%
+            padding: 0px
+            &::before
+                content: ""
+                position: absolute
+                z-index: 0
+                left: 50%
+                top: 50%
+                transform: translateX(-50%) translateY(-50%)
+                display: block
+                width: 78px
+                height: 78px
+                background: $basecolor2
+                border-radius: 50%
+                animation: pulse-border 1500ms ease-out infinite
+                @media only screen and (max-width: 768px)
+                    width: 58px
+                    height: 58px
+            &::after
+                content: "\f144"
+                position: absolute
+                z-index: 1
+                left: 50%
+                top: 50%
+                transform: translateX(-50%) translateY(-50%)
+                display: block
+                width: 78px
+                height: 78px
+                font-family: "Font Awesome 5 Free"
+                font-weight: 400
+                font-size: 77px
+                color: $white
+                border-radius: 50%
+                transition: all 200ms
+                box-shadow: 7px 0px 13px rgba(23, 23, 23, 0.30)
+                @media only screen and (max-width: 768px)
+                    width: 58px
+                    height: 58px
+                    font-size: 58px
+            &:hover::after
+                background-color: $basecolor2
+    .rit_sec
+        @media only screen and (max-width: 992px)
+            margin-top: 50px
+
+#gallery_sec
+    padding: 50px 0 35px
+    .img_box
+        height: 345px
+        overflow: hidden
+        position: relative
+        .info_box
+            background-color: rgba(0, 0, 0, 0.702)
+            position: absolute
+            left: 0px
+            bottom: 0px
+            width: 100%
+            padding: 15px
+            .event_title
+                font-size: 17px
+                font-weight: 500
+                color: rgb(255, 127, 20)
+                line-height: 1.235
+                margin-bottom: 10px
+                position: relative
+                padding-right: 25px
+                &::after
+                    content: "\f054"
+                    font-family: "Font Awesome 5 Free"
+                    font-weight: 600
+                    position: absolute
+                    right: 0px
+                    top: 0px
+            .info
+                font-size: 13px
+                color: rgb(255, 255, 255)
+                line-height: 1.615
+                p
+                    font-size: 13px
+                    color: rgb(255, 255, 255)
+                    line-height: 1.615
+        &.title_box
+            display: flex
+            align-items: center
+            justify-content: center
+            position: relative
+            &::before
+                content: ""
+                position: absolute
+                width: 100%
+                height: 100%
+                background: rgba(0, 0, 0, 0.40)
+                z-index: 0
+            .sec_title
+                font-size: 40px
+                color: rgb(255, 255, 255)
+                font-weight: bold
+                text-transform: uppercase
+                position: relative
+                z-index: 1
+        &.video
+            &::after
+                content: "\f144"
+                position: absolute
+                z-index: 1
+                left: 50%
+                top: 50%
+                transform: translateX(-50%) translateY(-50%)
+                display: block
+                width: 65px
+                height: 65px
+                font-family: "Font Awesome 5 Free"
+                font-weight: 400
+                font-size: 64px
+                color: $white
+                border-radius: 50%
+                transition: all 200ms
+                box-shadow: 7px 0px 13px rgba(23, 23, 23, 0.30)
+
+#testi_facts
+    padding: 35px 0 50px
+    .lftsec
+        @media only screen and (max-width: 992px)
+            margin-bottom: 45px
+    .testi_box
+        .testi_info
+            .name
+                font-size: 21px
+                color: rgb(60, 60, 60)
+                margin-bottom: 5px
+            .possition
+                font-size: 15.337px
+                color: rgb(92, 92, 92)
+        .msg_box
+            background: rgb(248, 248, 248)
+            padding: 35px 140px 30px 30px 
+            font-size: 14px
+            color: rgb(92, 92, 92)
+            font-weight: 500
+            line-height: 1.595
+            position: relative
+            margin-top: 50px
+            @media only screen and (max-width: 576px)
+                padding: 50px 30px 30px 30px 
+            &::before
+                content: ""
+                width: 0
+                height: 0
+                border-left: 0px solid transparent
+                border-right: 32px solid transparent
+                border-bottom: 32px solid rgb(248, 248, 248)
+                position: absolute
+                top: -32px
+                left: 5%
+            p
+                font-size: 14px
+                color: rgb(92, 92, 92)
+                line-height: 1.595
+                font-weight: 500
+                margin-bottom: 0px
+            .testi_dp
+                width: 110px
+                height: 110px
+                position: absolute
+                right: 15px
+                top: -35px
+                border: 10px solid $white
+                border-radius: 50%
+                overflow: hidden
+                display: flex
+                align-items: center
+                justify-content: center
+                img
+                    border-radius: 50%
+                @media only screen and (max-width: 576px)
+                    top: -65px
+
+    .slick-dots
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-top: 40px
+        li
+            margin: 0 2.5px
+            button
+                background: rgb(199, 201, 231)
+                width: 21px
+                height: 8px
+                font-size: 0px
+                border: none
+                outline: none
+                border-radius: 10px
+            &.slick-active
+                button
+                    background: $basecolor
+
+    .facts_list
+        @media only screen and (min-width: 992px)
+            margin-top: 80px
+        .box
+            display: flex
+            align-items: center
+            margin-bottom: 5px
+            .icon_box
+                background: rgb(248, 248, 248)
+                width: 65px
+                height: 65px
+                padding: 10px 5px
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-right: 15px
+            .data
+                font-size: 24px
+                text-transform: uppercase
+                color: rgb(99, 99, 99)
+                @media (max-width: 992px) and (min-width: 468px)
+                    font-size: 20px
+                @media only screen and (max-width: 468px)
+                    font-size: 15px
+                span, .counter
+                    font-size: 41px
+                    font-weight: 600
+                    color: rgb(236, 148, 75)
+                    margin-right: 10px
+                    @media (max-width: 992px) and (min-width: 468px)
+                        font-size: 31px
+                    @media only screen and (max-width: 468px)
+                        font-size: 21px

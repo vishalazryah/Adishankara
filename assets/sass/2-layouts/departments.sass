@@ -1,0 +1,295 @@
+//DEPARTMENTS_PAGE
+/*******************************DEPARTMENTS_PAGE****************/
+
+#department_page
+    .tab_sec
+        margin-bottom: 55px
+        .nav-tabs
+            border: none
+            @media only screen and (max-width: 992px)
+                display: none
+            .card-header
+                padding: 0px
+                border: none
+                border-radius: 0px
+                background: transparent
+                margin-right: 5px
+                button
+                    background: rgb(238, 238, 238)
+                    min-width: 152px
+                    height: 44px
+                    font-size: 16px
+                    color: rgb(0, 0, 0)
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    border: 1px solid rgb(238, 238, 238)
+                    border-bottom: 0px
+                    position: relative
+                    text-decoration: none
+                    &[aria-expanded="true"]
+                        pointer-events: none
+                        background: $white
+                        &::after
+                            content: ""
+                            position: absolute
+                            left: 0px
+                            bottom: -1px
+                            width: 100%
+                            height: 1px
+                            display: inline-block
+                            background: $white
+                            z-index: 1
+                    @media (max-width: 1200px) and (min-width: 992px)
+                        width: 125px
+                        font-size: 14px
+        .accordion
+            .card
+                border: none
+                @media only screen and (max-width: 992px)
+                    margin-bottom: 5px
+            .card-header
+                padding: 0px
+                border: none
+                border-radius: 0px
+                button
+                    background: rgb(238, 238, 238)
+                    width: 100%
+                    height: 44px
+                    font-size: 16px
+                    color: rgb(0, 0, 0)
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    border: 1px solid rgb(238, 238, 238)
+                    border-bottom: 0px
+                    position: relative
+                    text-decoration: none
+                @media only screen and (min-width: 992px)
+                    display: none
+                
+            .card-body
+                padding: 25px 20px 65px
+                border: 1px solid rgb(238, 238, 238)
+                .nav-tabs
+                    .card-header
+                        @media only screen and (min-width: 992px)
+                            display: block
+                            width: 50%
+                            margin: 0
+                .img_box
+                    @media only screen and (min-width: 768px)    
+                        float: right
+                        margin-left: 35px
+                        margin-bottom: 35px
+                    @media (max-width: 992px) and (min-width: 768px)    
+                        max-width: 285px
+                    @media only screen and (max-width: 768px)
+                        margin-bottom: 20px
+                p
+                    font-size: 14px
+                    color: rgb(51, 51, 51)
+                    line-height: 1.857
+                h1, h2, h3, h4, h5, h6
+                    font-size: 18px
+                    color: rgb(0, 0, 0)
+                    font-weight: 500
+                    line-height: 1.444
+                    margin: 25px 0 15px
+                ul
+                    li
+                        font-size: 14px
+                        color: rgb(51, 51, 51)
+                        line-height: normal
+                        margin-bottom: 10px
+                        position: relative
+                        padding-left: 15px
+                        &::before
+                            content: ""
+                            position: absolute
+                            left: 0px
+                            top: 7px
+                            width: 6px
+                            height: 6px
+                            background: #999999
+                            border-radius: 50%
+                        a
+                            color: rgb(44, 48, 120)
+                            font-weight: 600
+                #upcoming_events
+                    .img_box
+                        float: none
+                        margin: 0px
+                        margin-bottom: 5px
+                    .slick-dots 
+                        li
+                            padding: 0px
+                            margin-bottom: 0px
+                            &::before
+                                display: none
+                #testi_facts
+                    padding-bottom: 0px
+                    .testi_box
+                        @media only screen and (min-width: 468px)
+                            margin: 0 15px
+                    .slick-dots 
+                        li
+                            padding: 0px
+                            margin-bottom: 0px
+                            &::before
+                                display: none
+
+                .recruiters
+                    .item
+                        padding: 12.5px
+                        a
+                            border: 1px solid  rgb(224, 224, 224)
+                            border-radius: 3px
+                            background-color: rgb(255, 255, 255)
+                            width: 100%
+                            min-height: 66px
+                            max-height: 66px
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            padding: 8px
+                        @media only screen and (min-width: 1200px)
+                            width: calc(100% / 7)
+                        @media (max-width: 1200px) and (min-width: 768px)
+                            width: calc(100% / 6)
+                        @media (max-width: 768px) and (min-width: 576px)
+                            width: calc(100% / 4)
+                        @media (max-width: 576px) and (min-width: 468px)
+                            width: calc(100% / 3)
+                        @media only screen and (max-width: 468px)
+                            width: calc(100% / 2)
+                .chapters
+                    .item
+                        padding: 20px
+                        a
+                            display: block
+                            text-align: center
+                            .logo_box
+                                border: 1px solid  rgb(224, 224, 224)
+                                border-radius: 3px
+                                background-color: rgb(255, 255, 255)
+                                width: 100%
+                                min-height: 175px
+                                max-height: 175px
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                padding: 8px
+                            .title
+                                font-size: 16px
+                                color: rgb(21, 21, 21)
+                                margin-top: 15px
+                                font-weight: 500
+                        @media only screen and (min-width: 1200px)
+                            width: calc(100% / 5)
+                        @media (max-width: 1200px) and (min-width: 992px)
+                            width: calc(100% / 5)
+                        @media (max-width: 992px) and (min-width: 768px)
+                            width: calc(100% / 4)
+                        @media (max-width: 768px) and (min-width: 576px)
+                            width: calc(100% / 3)
+                        @media (max-width: 576px) and (min-width: 468px)
+                            width: calc(100% / 2)
+                        @media only screen and (max-width: 468px)
+                            width: 100%
+                .faculty_list
+                    margin-top: 25px
+                    .box
+                        border: 1px solid rgb(224, 224, 224)
+                        background-color: rgb(255, 255, 255)
+                        padding: 10px
+                        margin-bottom: 30px
+                        transition: ease-in-out all .3s
+                        .info
+                            padding: 25px 0 20px
+                            text-align: center
+                            .name
+                                font-size: 16px
+                                font-weight: 600
+                                color: rgb(55, 55, 55)
+                                margin-bottom: 10px
+                            .position
+                                font-size: 12px
+                                color: rgb(55, 55, 55)
+                        &:hover
+                            box-shadow: 0px 5px 38px 0px rgba(34, 34, 49, 0.2)
+
+                .laboratories_list
+                    .box
+                        border: 1px solid rgb(224, 224, 224)
+                        background: rgb(255, 255, 255)
+                        padding: 10px 15px 30px
+                        margin-bottom: 30px
+                        .gal_img
+                            width: 100%
+                            height: 215px
+                            position: relative
+                            background-repeat: no-repeat !important
+                            background-position: center !important
+                            background-size: cover !important
+                            &::after
+                                content: ""
+                                position: absolute
+                                left: 0px
+                                top: 0px
+                                background: url('../images/icons/gal_icon.png') no-repeat center rgba(0, 0, 0, 0.60)
+                                width: 100%
+                                height: 100%
+                                opacity: 0
+                                visibility: hidden
+                                transition: ease-in-out all .3s
+                            &:hover
+                                &::after
+                                    opacity: 1
+                                    visibility: visible
+                        .info
+                            padding-top: 20px
+                            text-align: center
+                            .name
+                                font-size: 15px
+                                color: rgb(55, 55, 55)
+                                line-height: normal
+                                font-weight: 600
+                table
+                    max-width: 100%
+                    @media only screen and (max-width: 768px)
+                        display: block
+                        overflow-x: scroll
+                    td, th
+                        border: 1px solid rgb(227, 227, 227)
+                    thead
+                        background: rgb(249, 249, 249)
+                        th, td
+                            font-size: 14px
+                            color: rgb(51, 51, 51)
+                            line-height: 1.857
+                            font-weight: 600
+                            vertical-align: baseline
+                    tbody
+                        tr
+                            background: $white
+                            th, td
+                                font-size: 14px
+                                color: rgb(51, 51, 51)
+                                line-height: 1.857
+                                font-weight: 400
+                                
+                            h1, h2, h3, h4, h5, h6
+                                font-size: 14px
+                                color: $basecolor
+                                line-height: 1.857
+                                margin: 0px
+                                font-weight: 600
+                            &:nth-child(even)
+                                background: rgb(249, 249, 249)
+                    &:last-child
+                        margin-bottom: 0px
+                                
+            #Facilities
+                .card-body
+                    padding-bottom: 0px
